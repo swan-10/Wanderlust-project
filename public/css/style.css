@@ -1,0 +1,107 @@
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* background-color: bisque; */
+}
+.container{
+    flex: 1;
+}
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.navbar-nav{
+    background-color: white;
+}
+.fa-airbnb{
+    color: red;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222;
+}
+
+
+
+/* footer */
+.f-info{
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+.f-info-links, .f-info-socials, .f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+.listing-card{
+    border: none;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem;
+    width: 100%;
+}
+.card-body {
+    padding: 0;
+}
+.card-text p{
+    font-weight: 400;
+    /* font-style: ;*/
+}
+.listing-link{
+    text-decoration: none;
+}
+
+/* card hover effect */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* show.ejs  styling */
+.show-img{
+    height: 30vh;
+}
+
+/* tax button */
+.tax-toggle{
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 3.5rem;
+    padding: 1rem;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 1200px) {
+    .filter {
+      display: none; /* Hide filters */
+    }
+  
+    .tax-toggle {
+      margin-top: 0; /* Remove top margin for tax toggle */
+      display: none;
+    }
+}
